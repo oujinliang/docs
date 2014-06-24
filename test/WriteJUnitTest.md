@@ -48,6 +48,7 @@
 ```
 
 在JUnit 4 中，我们可以使用 `@Test(expected = Xxx.class)`:
+
 ```java
     @Test(expected = NullPointerException.class)
     public void nullTest() {
@@ -56,6 +57,7 @@
 ```
 
 或者使用 ExpectedException Rule:
+
 ```java
     @Rule
     public ExpectedException thrown = ExpectedException.none();
